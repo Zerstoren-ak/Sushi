@@ -1,0 +1,346 @@
+/*html, body, div, span, applet, object, iframe,*/
+/*h1, h2, h3, h4, h5, h6, p, blockquote, pre,*/
+/*a, abbr, acronym, address, big, cite, code,*/
+/*del, dfn, em, img, ins, kbd, q, s, samp,*/
+/*small, strike, strong, sub, sup, tt, var,*/
+/*b, u, i, center,*/
+/*dl, dt, dd, ol, ul, li,*/
+/*fieldset, form, label, legend,*/
+/*table, caption, tbody, tfoot, thead, tr, th, td,*/
+/*article, aside, canvas, details, embed,*/
+/*figure, figcaption, footer, header, hgroup,*/
+/*menu, nav, output, ruby, section, summary,*/
+/*time, mark, audio, video {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    border: 0;*/
+/*    font-size: 100%;*/
+/*    font: inherit;*/
+/*    vertical-align: baseline;*/
+/*}*/
+
+/*article, aside, details, figcaption, figure,*/
+/*footer, header, hgroup, menu, nav, section {*/
+/*    display: block;*/
+/*}*/
+
+/*ol, ul {*/
+/*    list-style: none;*/
+/*}*/
+/*blockquote, q {*/
+/*    quotes: none;*/
+/*}*/
+/*blockquote:before, blockquote:after,*/
+/*q:before, q:after {*/
+/*    content: '';*/
+/*    content: none;*/
+/*}*/
+/*table {*/
+/*    border-collapse: collapse;*/
+/*    border-spacing: 0;*/
+/*}*/
+
+/*General*/
+
+a,
+span,
+input,
+i,
+button {
+    display: inline-flex;
+    color: inherit;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+:root {
+    --mainDesClr: #db2e2e;
+    --bgMain: #ffffff;
+    --bgExtra: #000000;
+    --borderLight: #e3e3e3;
+
+    --ffText: "Source Sans Pro", sans-serif;
+    --ffTextExtra: "Oswald", sans-serif;
+
+    --fClr: #484848;
+
+    --sectPadTop: 4.5rem;
+    --sectPadBtm: 5rem;
+}
+
+body {
+    font-family: var(--ffText);
+    background-color: var(--bgMain);
+    color: var(--fClr)
+}
+
+p {
+    font-family: var(--ffText);
+    font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--ffTextExtra);
+    text-transform: uppercase;
+}
+
+/*Header*/
+
+.header-contacts {
+    background-color: #1d1d1d;
+    color: #ffffff;
+    padding: 1rem 0;
+    font-size: 0.8rem;
+}
+
+.socials {
+    width: 25px;
+    height: 25px;
+}
+
+.socials i {
+    font-size: 12px;
+}
+
+.header-menu {
+    background-color: #282828;
+    color: #ffffff;
+    padding: 2rem 0;
+}
+
+
+/*Daily meals*/
+
+.daily-meals {
+    background-color: #f8f8f8;
+    padding-top: calc(var(--sectPadTop) - 2rem);
+    padding-bottom: var(--sectPadBtm);
+}
+
+.daily-meals .card-item {
+    padding: 0 50px;
+    text-align: center;
+    border-radius: 0;
+}
+
+.daily-meals .card-item>h4 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.daily-meals .card-item>a:first-child {
+    margin-bottom: 1rem;
+}
+
+.daily-meals .card-item>p {
+    margin-bottom: 2rem;
+    color: #686868;
+}
+
+/*Samurai Specials*/
+
+.specials>.container {
+    padding: var(--sectPadTop) 15px var(--sectPadBtm) 15px;
+
+}
+
+.section-title {
+    font-size: 3rem;
+    border-bottom: 1px solid #d2d2d2;
+    padding-bottom: 1rem;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.section-title>span {
+    font-weight: 300;
+}
+
+.section-title>span::before {
+    content: '';
+    position: absolute;
+    width: 170px;
+    height: 5px;
+    background-color: #db2e2e;
+    left: 0;
+    bottom: 0;
+}
+
+.specials .card-container {
+    padding-top: 70px;
+    margin-bottom: 2rem;
+}
+
+.specials .card-item {
+    border-radius: 0;
+    align-items: center;
+    text-align: center;
+}
+
+.specials .card-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px #cccccc;
+    border: 10px solid #ffffff;
+    margin-top: -70px;
+    margin-bottom: 1rem;
+}
+
+.specials .card-image img {
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    border: 5px solid var(--mainDesClr);
+}
+
+.specials .card-image .champion {
+    border-color: #ffaa17;
+}
+
+.circle-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--mainDesClr);
+    color: #ffffff;
+    transform: scale(0);
+    opacity: 0.85;
+    transition: .3s ease;
+    font-size: 1rem;
+}
+
+.circle-hover.champion {
+    background-color: #ffaa17;
+}
+
+.specials .card-image:hover .circle-hover{
+    transform: scale(1);
+}
+
+.circle-hover>i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    color: #ffffff;
+}
+
+.specials .card-item>p {
+    color: #a0a0a0;
+}
+
+.special-label {
+    position: absolute;
+    width: 38px;
+    height: 59px;
+    background-image: url('../img/icons/css_sprites.png');
+}
+
+.special-label.new {
+    top: -7px;
+    left: 10px;
+    background-position: -98px -20px;
+}
+
+.special-label.champion {
+    top: -7px;
+    right: 10px;
+    background-position: -20px -20px;
+}
+
+.specials .card-buttons {
+    display: flex;
+    font-weight: 600;
+}
+
+.specials .card-buttons>div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #282828;
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+.specials .card-buttons>div>span {
+    flex-direction: column;
+    align-items: center;
+    font-size: 8px;
+    margin-left: 10px;
+    margin-right: 25px;
+    line-height: 1;
+}
+
+.specials .card-buttons .portion-nmbr {
+    font-size: 0.6rem;
+    font-weight: 700;
+}
+
+.specials .card-buttons>* {
+    width: 50%;
+}
+
+.btn-card {
+    font-size: 12px;
+    padding: 5px 0;
+    border-radius: 0;
+}
+
+.btn-card.champion {
+    background-color: #ffaa17;
+    border-color: #ffaa17;
+}
+
+.specials .card-buttons .fa-plus {
+    font-size: 1rem;
+    margin-right: 0.5rem;
+}
+
+.section-legend {
+    text-transform: uppercase;
+}
+
+.section-legend>p {
+    font-size: 1.1rem;
+    color: #b8b8b8;
+}
+
+.section-legend>h4 {
+    font-size: 1.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.section-legend>h4>span {
+    color: var(--mainDesClr);
+}
+
+/*clip-path: polygon(0 0, 100% 0, 100% 100%, 49% 74%, 0 100%);*/
