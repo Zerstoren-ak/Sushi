@@ -72,7 +72,8 @@ button {
     --ffText: "Source Sans Pro", sans-serif;
     --ffTextExtra: "Oswald", sans-serif;
 
-    --fClr: #484848;
+    --fClrP: #484848;
+    --fClrLight: #ffffff;
 
     --sectPadTop: 4.5rem;
     --sectPadBtm: 5rem;
@@ -81,12 +82,12 @@ button {
 body {
     font-family: var(--ffText);
     background-color: var(--bgMain);
-    color: var(--fClr)
 }
 
 p {
     font-family: var(--ffText);
     font-size: 14px;
+    color: var(--fClrP)
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -94,30 +95,55 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 }
 
+.design-color {
+    color: var(--mainDesClr);
+}
+
 /*Header*/
 
 .header-contacts {
     background-color: #1d1d1d;
-    color: #ffffff;
-    padding: 1rem 0;
+    color: var(--fClrLight);
+    padding: 0.5rem 0;
     font-size: 0.8rem;
 }
 
 .socials {
     width: 25px;
     height: 25px;
-}
-
-.socials i {
     font-size: 12px;
 }
 
 .header-menu {
     background-color: #282828;
-    color: #ffffff;
-    padding: 2rem 0;
+    color: var(--fClrLight);
+    padding: 1rem 0;
 }
 
+
+/*Hero*/
+
+.hero {
+    background:
+            linear-gradient(rgba(0, 0, 0, .85),
+            rgba(0, 0, 0, .85)), url(../img/main-bg.jpg) no-repeat center / cover;
+    color: var(--fClrLight);
+}
+
+.hero-body {
+    padding-top: 6rem;
+    padding-bottom: 12rem;
+}
+
+.hero .hero-card.card-image {
+    border: 10px solid transparent;
+    margin: 0;
+}
+
+.hero .slider-item {
+    display: flex;
+    align-items: center;
+}
 
 /*Daily meals*/
 
@@ -190,7 +216,8 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
-.specials .card-image {
+.specials .card-image,
+.hero .card-image{
     position: relative;
     display: flex;
     justify-content: center;
@@ -204,7 +231,8 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 1rem;
 }
 
-.specials .card-image img {
+.specials .card-image img,
+.hero .card-image img{
     height: 125px;
     width: 125px;
     border-radius: 50%;
@@ -239,7 +267,8 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #ffaa17;
 }
 
-.specials .card-image:hover .circle-hover{
+.specials .card-image:hover .circle-hover,
+.hero .card-image:hover .circle-hover {
     transform: scale(1);
 }
 
@@ -338,9 +367,4 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.9rem;
     margin-bottom: 1.5rem;
 }
-
-.section-legend>h4>span {
-    color: var(--mainDesClr);
-}
-
 /*clip-path: polygon(0 0, 100% 0, 100% 100%, 49% 74%, 0 100%);*/
