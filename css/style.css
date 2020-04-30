@@ -99,6 +99,12 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--mainDesClr);
 }
 
+.hover-link:hover {
+    text-decoration: none;
+    color: var(--mainDesClr);
+    transition: .2s;
+}
+
 /*Header*/
 
 .header-contacts {
@@ -120,6 +126,66 @@ h1, h2, h3, h4, h5, h6 {
     padding: 1rem 0;
 }
 
+/*Navbar*/
+
+.header-menu .navbar {
+    font-family: var(--ffTextExtra);
+}
+
+.header-menu .nav-link {
+    margin-right: 2rem;
+    color: var(--fClrLight) !important;
+    position: relative;
+}
+
+
+.header-menu .nav-link::before {
+    position: absolute;
+    top: calc(100% + 1.2rem);
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 0;
+    background-color: var(--mainDesClr);
+    transition: .2s ease;
+}
+
+.header-menu .nav-link:hover::before  {
+    height: 4px;
+}
+
+.header-menu .dropdown-menu {
+    background-color: #1d1d1d;
+    left: -15px;
+    width: 11rem;
+    padding: 1rem;
+}
+
+.header-menu .dropdown-menu.show {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-menu .dropdown-menu p {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px dashed #4b4b4b;
+    color: var(--fClrLight);
+    text-transform: uppercase;
+    font-family: var(--ffTextExtra);
+}
+
+.header-menu .dropdown-menu button {
+    font-weight: 400;
+}
+
+.header-menu .dropdown-menu span {
+    color: #4b4b4b;
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    align-self: center;
+}
 
 /*Hero*/
 
@@ -131,18 +197,55 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-body {
-    padding-top: 6rem;
-    padding-bottom: 12rem;
+    padding: 7rem 0;
 }
 
 .hero .hero-card.card-image {
     border: 10px solid transparent;
-    margin: 0;
+    width: 90px;
+    height: 90px;
+    margin: 0 2rem 0 0;
+}
+
+.hero .hero-card.card-image img {
+    width: 78px;
+    height: 78px;
 }
 
 .hero .slider-item {
-    display: flex;
-    align-items: center;
+    background-color: rgba(8, 8, 8, 0.3);
+    padding: 1rem 4rem;
+}
+
+.hero .slider-price {
+    flex-basis: 50%;
+}
+
+.hero .slider-price span {
+    font-family: var(--ffTextExtra);
+    font-size: .7rem;
+    text-align: right;
+    margin-bottom: 0.5rem;
+}
+
+.hero .slider-price .font-large {
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.hero .carousel-control-next,
+.hero .carousel-control-prev {
+    width: 4%;
+    height: 50%;
+    opacity: 1;
+    background-color: var(--mainDesClr);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hero .carousel-control-next-icon,
+.hero .carousel-control-prev-icon {
+    width: 12px;
 }
 
 /*Daily meals*/
