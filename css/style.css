@@ -194,6 +194,15 @@ h1, h2, h3, h4, h5, h6 {
             linear-gradient(rgba(0, 0, 0, .85),
             rgba(0, 0, 0, .85)), url(../img/main-bg.jpg) no-repeat center / cover;
     color: var(--fClrLight);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-mascot {
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    max-width: 100%;
 }
 
 .hero-body {
@@ -213,7 +222,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero .slider-item {
-    background-color: rgba(8, 8, 8, 0.3);
+    background-color: rgba(8, 8, 8, 0.6);
     padding: 1rem 4rem;
 }
 
