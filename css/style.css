@@ -290,7 +290,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /*Samurai Specials*/
 
-.specials>.container {
+.specials {
     padding: var(--sectPadTop) 15px var(--sectPadBtm) 15px;
 
 }
@@ -329,7 +329,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .specials .card-image,
-.hero .card-image{
+.hero .card-image,
+.team .card-image {
     position: relative;
     display: flex;
     justify-content: center;
@@ -344,7 +345,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .specials .card-image img,
-.hero .card-image img{
+.hero .card-image img,
+.team .card-image img {
     height: 125px;
     width: 125px;
     border-radius: 50%;
@@ -380,7 +382,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .specials .card-image:hover .circle-hover,
-.hero .card-image:hover .circle-hover {
+.hero .card-image:hover .circle-hover,
+.team .card-image:hover .circle-hover {
     transform: scale(1);
 }
 
@@ -480,3 +483,39 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 1.5rem;
 }
 /*clip-path: polygon(0 0, 100% 0, 100% 100%, 49% 74%, 0 100%);*/
+
+/*Our Dream Team*/
+
+.team {
+    color: var(--fClrLight);
+    padding: var(--sectPadTop) 15px var(--sectPadBtm) 15px;
+    background:
+    linear-gradient(rgba(0, 0, 0, .9),
+    rgba(0, 0, 0, .85)), url(../img/new-york-empire-state-building-manhattan-zaliv-doma-neboskri.jpg) no-repeat center / cover;;
+}
+
+.team .section-title {
+    border-color: #4b4b4b;
+}
+
+.team .team-card {
+    padding-top: 135px;
+    text-align: center;
+}
+
+.team .team-card .card-image {
+    width: 270px;
+    height: 270px;
+    border: 15px solid transparent;
+    margin-top: -135px;
+}
+
+.team .team-card .card-image img {
+    width: 245px;
+    height: 245px;
+}
+
+.team-card .card-image>a {
+    font-size: .8rem;
+}
+
