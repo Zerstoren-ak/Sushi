@@ -503,14 +503,14 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
-.team .team-card .card-image {
+.team-card .card-image {
     width: 270px;
     height: 270px;
     border: 15px solid transparent;
     margin-top: -135px;
 }
 
-.team .team-card .card-image img {
+.team-card .card-image img {
     width: 245px;
     height: 245px;
 }
