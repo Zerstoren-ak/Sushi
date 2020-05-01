@@ -493,7 +493,7 @@ h1, h2, h3, h4, h5, h6 {
 .team {
     color: var(--fClrLight);
     padding-top: var(--sectPadTop);
-    padding-bottom: var(--sectPadBtm);
+    padding-bottom: calc((var(--sectPadBtm)) - 1.5rem);
     background:
     linear-gradient(rgba(0, 0, 0, .9),
     rgba(0, 0, 0, .85)), url(../img/new-york-empire-state-building-manhattan-zaliv-doma-neboskri.jpg) no-repeat center / cover;;
@@ -542,5 +542,6 @@ h1, h2, h3, h4, h5, h6 {
 .history-card:nth-child(3) img {
     max-height: 310px;
 }
+
 
 
