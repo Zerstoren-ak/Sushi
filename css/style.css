@@ -295,8 +295,8 @@ h1, h2, h3, h4, h5, h6 {
 /*Samurai Specials*/
 
 .specials {
-    padding: var(--sectPadTop) 15px var(--sectPadBtm) 15px;
-
+    padding-top: var(--sectPadTop);
+    padding-bottom: var(--sectPadBtm);
 }
 
 .section-title {
@@ -492,7 +492,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .team {
     color: var(--fClrLight);
-    padding: var(--sectPadTop) 15px var(--sectPadBtm) 15px;
+    padding-top: var(--sectPadTop);
+    padding-bottom: var(--sectPadBtm);
     background:
     linear-gradient(rgba(0, 0, 0, .9),
     rgba(0, 0, 0, .85)), url(../img/new-york-empire-state-building-manhattan-zaliv-doma-neboskri.jpg) no-repeat center / cover;;
@@ -522,4 +523,24 @@ h1, h2, h3, h4, h5, h6 {
 .team-card .card-image>a {
     font-size: .8rem;
 }
+
+/*Our history*/
+
+.history {
+    padding-top: var(--sectPadTop);
+    padding-bottom: var(--sectPadBtm);
+}
+
+.history-card img {
+    object-fit: cover;
+}
+
+.history-card:first-child img {
+    max-height: 230px;
+}
+
+.history-card:nth-child(3) img {
+    max-height: 310px;
+}
+
 
