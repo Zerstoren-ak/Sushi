@@ -79,6 +79,10 @@ button {
     --sectPadBtm: 5rem;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: var(--ffText);
     background-color: var(--bgMain);
