@@ -54,6 +54,10 @@ button {
     text-transform: uppercase;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 .btn {
     display: inline-flex;
     justify-content: center;
@@ -72,8 +76,9 @@ button {
     --ffText: "Source Sans Pro", sans-serif;
     --ffTextExtra: "Oswald", sans-serif;
 
-    --fClrP: #484848;
-    --fClrLight: #ffffff;
+    --fClrPDark: #484848;
+    --fClrPLight: #a2a2a2;
+    --fClrLight: #f4f4f4;
 
     --sectPadTop: 4.5rem;
     --sectPadBtm: 5rem;
@@ -91,7 +96,7 @@ body {
 p {
     font-family: var(--ffText);
     font-size: 14px;
-    color: var(--fClrP)
+    color: var(--fClrPDark)
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -104,7 +109,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hover-link:hover {
-    text-decoration: none;
     color: var(--mainDesClr);
     transition: .2s;
 }
@@ -195,8 +199,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero {
     background:
-            linear-gradient(rgba(0, 0, 0, .85),
-            rgba(0, 0, 0, .85)), url(../img/main-bg.jpg) no-repeat center / cover;
+        linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)),
+        url(../img/main-bg.jpg) no-repeat center / cover;
     color: var(--fClrLight);
     position: relative;
     overflow: hidden;
@@ -228,6 +232,10 @@ h1, h2, h3, h4, h5, h6 {
 .hero .slider-item {
     background-color: rgba(8, 8, 8, 0.6);
     padding: 1rem 4rem;
+}
+
+.hero .slider-item p {
+    color: var(--fClrPLight);
 }
 
 .hero .slider-price {
@@ -410,7 +418,7 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     width: 38px;
     height: 59px;
-    background-image: url('../img/icons/css_sprites.png');
+    background-image: url('../img/sprites/css_sprites.png');
 }
 
 .special-label.new {
@@ -495,8 +503,12 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: var(--sectPadTop);
     padding-bottom: calc((var(--sectPadBtm)) - 1.5rem);
     background:
-    linear-gradient(rgba(0, 0, 0, .9),
-    rgba(0, 0, 0, .85)), url(../img/new-york-empire-state-building-manhattan-zaliv-doma-neboskri.jpg) no-repeat center / cover;;
+        linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)),
+        url(../img/team-bg.jpg) no-repeat center / cover;;
+}
+
+.team p {
+    color: var(--fClrPLight);
 }
 
 .team .section-title {
@@ -543,5 +555,49 @@ h1, h2, h3, h4, h5, h6 {
     max-height: 310px;
 }
 
+/*Instant order*/
 
+.instant-order {
+    background:
+        linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)),
+        url(../img/order-bg.jpg) no-repeat center / cover;
+    color: var(--fClrLight);
+}
+
+.instant-order>.container {
+    padding: 5.3rem 0;
+}
+
+.instant-order img[alt^="order"] {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.instant-order img[alt^="hand"] {
+    bottom: 0;
+    right: -2rem;
+}
+
+.instant-order p {
+    color: var(--fClrPLight);
+}
+
+.order-phone {
+    font-family: var(--ffTextExtra);
+    text-align: right;
+}
+
+.oder-phone a {
+    text-transform: uppercase;
+}
+
+.order-phone a:first-child {
+    font-size: 1.5rem;
+}
+
+.order-phone a:last-child {
+    font-size: 3rem;
+    font-weight: 700;
+}
 
