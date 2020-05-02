@@ -318,7 +318,7 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     width: 170px;
     height: 5px;
-    background-color: #db2e2e;
+    background-color: var(--mainDesClr);
     left: 0;
     bottom: 0;
 }
