@@ -25,12 +25,26 @@
                     <i class="fas fa-phone-alt mr-2"></i><a href="tel:(044) 555 123 1234" class="text-white-50 small">(044) 555 123 1234 / 1235</a>
                 </div>
                 <div class="col-5 text-right">
-                    <i class="fas fa-power-off mr-2"></i><a href="#" role="button" class="border-right border-danger pr-3 hover-link">Login</a>
+                    <i class="fas fa-power-off mr-2"></i><a href="#" role="button" class="border-right border-danger pr-3 hover-link" id="btnLoginForm">Login</a>
                     <span class="text-white-50 ml-2 text-capitalize small">Not a member?</span>
-                    <a href="#" class="mr-2 hover-link" role="button"> Register now</a><i class="fas fa-lock mr-4"></i>
+                    <a href="#" class="mr-2 hover-link" role="button" id="btnRegisterForm"> Register now</a><i class="fas fa-lock mr-4"></i>
                     <a href="#" class="btn btn-danger rounded-circle socials mr-3"><i class="fab fa-facebook-f"></i></a>
                     <a href="#" class="btn btn-danger rounded-circle socials mr-3"><i class="fab fa-twitter"></i></a>
                     <a href="#" class="btn btn-danger rounded-circle socials"><i class="fab fa-google-plus-g"></i></a>
+                </div>
+                <div class="form-popup-overlay" id="loginForm">
+                    <form class="col-3 d-flex flex-wrap justify-content-center form-general login-form">
+                        <a href="index.html" class="my-3"><img class="logo img-fluid mb-2" src="img/icons/logo-alt.png" alt="Red Samurai logo"></a>
+                        <input type="email" class="form-control mb-2" placeholder="Email..." id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <input type="password" class="form-control mb-2" placeholder="Password..." id="exampleInputPassword1">
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-danger w-100"><i class="fas fa-power-off mr-2"></i>Login</button>
+                        <button type="button" id="btnFormClose" class="btn"><i class="fas fa-times-circle text-danger"></i></button>
+                    </form>
+
                 </div>
             </div>
         </div>

@@ -110,6 +110,50 @@ h1, h2, h3, h4, h5, h6 {
     transition: .2s;
 }
 
+.no-scroll {
+    overflow: hidden !important;
+
+}
+
+/*Popups*/
+
+.form-popup-overlay.show {
+    display: flex;
+}
+
+.form-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
+}
+
+.form-general {
+    color: #000;
+}
+
+.form-general button[id$="Close"] {
+    position: absolute;
+    top: 0.2rem;
+    right: 0.2rem;
+    font-size: 1.5rem;
+}
+
+
+
+/*Login-form*/
+
+.login-form {
+    background-color: var(--bgMain);
+    padding: 1rem;
+}
+
 /*Header*/
 
 .header-contacts {
