@@ -115,6 +115,10 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+.fa-plus {
+    font-size: 1rem;
+}
+
 /*Popups*/
 
 .form-popup-overlay.show {
@@ -144,8 +148,6 @@ h1, h2, h3, h4, h5, h6 {
     right: 0.2rem;
     font-size: 1.5rem;
 }
-
-
 
 /*Login-form*/
 
@@ -515,7 +517,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .specials .card-buttons .fa-plus {
-    font-size: 1rem;
     margin-right: 0.5rem;
 }
 
@@ -638,4 +639,78 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 3rem;
     font-weight: 700;
 }
+
+/*Offers and Combos*/
+
+.combos {
+    padding-top: var(--sectPadTop);
+    padding-bottom: var(--sectPadBtm);
+}
+
+.combos-arc.red {
+    height: 621px;
+    background: url('../img/sprites/arc-sprite.png') -25px -25px;
+}
+
+.combos-arc.yellow {
+    height: 621px;
+    background: url('../img/sprites/arc-sprite.png') -414px -25px;
+}
+
+.combos-arc {
+    color: var(--fClrLight);
+    padding: 90px 45px 0 35px;
+    font-family: var(--ffTextExtra);
+    text-align: center;
+    margin-bottom: 4.1rem;
+}
+
+.combos-arc>ul {
+    padding: 0;
+    list-style: none;
+    font-weight: 300;
+    margin-bottom: 0.9rem;
+}
+
+.combos-arc>ul>li {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6rem 0;
+    border-bottom: 1px dashed #4b4b4b;
+    text-transform: uppercase;
+}
+
+.combos-price {
+    text-align: right;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.combos-price .font-large {
+    font-size: 3.75rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.combos-price + p {
+    text-transform: uppercase;
+    color: var(--fClrLight);
+    font-family: var(--ffTextExtra);
+    width: 45%;
+    margin-bottom: 3.25rem;
+}
+
+.combos-price + p>span {
+    font-weight: 700;
+}
+
+.combos-arc button {
+    transform: translateX(-2px);
+    font-family: var(--ffText);
+    padding: 0.4rem 1.1rem;
+}
+
+
+
 
