@@ -104,6 +104,10 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--mainDesClr);
 }
 
+.font-bold {
+    font-weight: 700;
+}
+
 .hover-link:hover {
     text-decoration: none;
     color: var(--mainDesClr);
@@ -337,7 +341,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .daily-meals .card-item>p {
     margin-bottom: 2rem;
-    color: #686868;
 }
 
 /*Samurai Specials*/
@@ -710,6 +713,11 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--ffText);
     padding: 0.4rem 1.1rem;
 }
+
+.section-legend + p{
+    color: var(--fClrPLight);
+}
+
 
 
 
