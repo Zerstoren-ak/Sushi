@@ -385,7 +385,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .specials .card-image,
 .hero .card-image,
-.team .card-image {
+.team .card-image,
+.reviews .card-image {
     position: relative;
     display: flex;
     justify-content: center;
@@ -430,6 +431,7 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0.85;
     transition: .3s ease;
     font-size: 1rem;
+    z-index: 2;
 }
 
 .circle-hover.champion {
@@ -718,7 +720,31 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--fClrPLight);
 }
 
+/*Reviews*/
+
+.reviews {
+    background-color: #db2e2e;
+    color: var(--fClrLight)
+}
 
 
+.review-card .card-image {
+    border: 10px solid transparent;
+    width: 80px;
+    height: 80px;
+}
 
+.review-card .card-image img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border: 5px solid #000;
+    border-radius: 50%;
+}
 
+.review-card p {
+    color: var(--fClrLight);
+    font-style: italic;
+    font-weight: 100;
+    font-size: 0.7em;
+}
