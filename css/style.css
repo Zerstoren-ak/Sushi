@@ -724,9 +724,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .reviews {
     background-color: #db2e2e;
-    color: var(--fClrLight)
+    color: var(--fClrLight);
 }
 
+.review-card {
+    width: 35%;
+}
 
 .review-card .card-image {
     border: 10px solid transparent;
@@ -748,5 +751,4 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 100;
     font-size: 0.7em;
     align-self: flex-end;
-
 }
