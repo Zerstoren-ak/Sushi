@@ -1,4 +1,3 @@
-
 "use strict";
 //SLider
 $('.carousel').carousel({
@@ -12,12 +11,12 @@ const btnFormClose = document.getElementById('btnFormClose');
 const formLogin = document.getElementById('loginForm');
 
 
-btnFormLogin.onclick = function () {
+btnFormLogin.addEventListener(`click`, function () {
     document.body.classList.add('no-scroll');
     formLogin.classList.add('show');
-};
+});
 
-btnFormClose.onclick = function () {
+btnFormClose.addEventListener(`click`, function () {
     document.body.classList.remove('no-scroll');
     formLogin.classList.remove('show');
-};
+});

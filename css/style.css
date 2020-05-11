@@ -158,8 +158,23 @@ h1, h2, h3, h4, h5, h6 {
 .login-form {
     background-color: var(--bgMain);
     padding: 1rem;
+    padding-bottom: 0;
 }
 
+.login-form input {
+    text-transform: capitalize;
+    background-color: #f8f8f8;
+}
+
+.login-form .form-info {
+    background-color: #f8f8f8;
+    padding: 1rem;
+    margin: 0 -1rem;
+}
+
+.login-form .form-info>p {
+    color: var(--fClrPLight);
+}
 /*Header*/
 
 .header-contacts {
@@ -723,7 +738,9 @@ h1, h2, h3, h4, h5, h6 {
 /*Reviews*/
 
 .reviews {
-    background-color: #db2e2e;
+    background:
+            linear-gradient(rgba(219, 46, 46, .85), rgba(219, 46, 46, .85)),
+            url(../img/bg-reviews.jpg) no-repeat center / cover;
     color: var(--fClrLight);
 }
 
@@ -751,4 +768,57 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 100;
     font-size: 0.7em;
     align-self: flex-end;
+}
+
+    /*Progress bars*/
+
+.progress_bar {
+    padding: calc(var(--sectPadTop) + 1rem) 0;
+    background:
+            linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)),
+            url(../img/bg-progressBars.jpg) no-repeat center / cover;
+}
+
+.progress_bar-item {
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+/*Contact-us*/
+
+.contact-us {
+    padding-top: var(--sectPadTop);
+    padding-bottom: var(--sectPadBtm);
+}
+
+.contacts a>p {
+    color: var(--fClrPLight);
+    text-transform: capitalize;
+}
+
+.contacts a::before {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: var(--mainDesClr);
+    transition: .2s ease;
+}
+
+.contacts a:hover::before {
+    width: 100%;
+}
+
+.contacts-form input,
+.contacts-form textarea {
+    text-transform: capitalize;
+    background-color: #f8f8f8;
+    font-style: italic;
+    font-size: 0.8rem;
+    padding: 0.7em;
+    border-radius: 2px;
+    border: 1px solid #e3e3e3;
 }

@@ -33,18 +33,21 @@
                     <a href="#" class="btn btn-danger rounded-circle socials"><i class="fab fa-google-plus-g"></i></a>
                 </div>
                 <div class="form-popup-overlay" id="loginForm">
-                    <form class="col-3 d-flex flex-wrap justify-content-center form-general login-form">
-                        <a href="index.html" class="my-3"><img class="logo img-fluid mb-2" src="img/icons/logo-alt.png" alt="Red Samurai logo"></a>
-                        <input type="email" class="form-control mb-2" placeholder="Email..." id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <form class="col-3 d-flex flex-column form-general login-form">
+                        <a href="index.html" class="my-3 align-self-center"><img class="logo img-fluid mb-2" src="img/icons/logo-alt.png" alt="Red Samurai logo"></a>
+                        <input type="text" class="form-control mb-2" placeholder="Username..." id="exampleInputEmail1" aria-describedby="emailHelp">
                         <input type="password" class="form-control mb-2" placeholder="Password..." id="exampleInputPassword1">
                         <div class="form-group form-check">
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            <label class="form-check-label" for="exampleCheck1">Remember me</label>
                         </div>
-                        <button type="submit" class="btn btn-danger w-100"><i class="fas fa-power-off mr-2"></i>Login</button>
+                        <button type="submit" class="btn btn-danger w-100 mb-3"><i class="fas fa-power-off mr-2"></i>Login</button>
                         <button type="button" id="btnFormClose" class="btn"><i class="fas fa-times-circle text-danger"></i></button>
+                        <div class="d-flex flex-column align-items-center form-info">
+                            <p class="mb-0">You don't have Red Samurai Account?</p>
+                            <a href="" class="design-color font-bold hover-link">Register now!</a>
+                        </div>
                     </form>
-
                 </div>
             </div>
         </div>
@@ -622,10 +625,85 @@
         </a>
     </div>
 </section>
+
+<section class="progress_bar">
+    <div class="container">
+        <div class="row">
+            <div class="col-4 progress_bar-item"></div>
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+        </div>
+    </div>
+</section>
+<section class="contact-us">
+    <div class="container">
+        <h3 class="section-title">Contact <span>us</span></h3>
+        <div class="row contacts mb-5">
+            <div class="col-4 d-flex align-items-center">
+                <img src="img/contacts/ico-geo.png" alt="geolocation icon" class="mr-3">
+                <div class="d-flex flex-column justify-content-center">
+                    <a href="https://goo.gl/maps/dFnN1tuSJBZdA5nM8" class="flex-column position-relative mb-2 hover-link">
+                        <h6 class="mb-0">New York</h6>
+                        <p class="mb-0 hover-link">W 39th Street 1234, New York</p>
+                    </a>
+                    <a href="https://goo.gl/maps/hzNWa8DziSAEhy6G6" class="flex-column position-relative mb-2 hover-link">
+                        <h6 class="mb-0">Chicago</h6>
+                        <p class="mb-0 hover-link">Colombus Ave 1234, Chicago</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-4 d-flex align-items-center">
+                <img src="img/contacts/ico-phone.png" alt="phone icon" class="mr-3">
+                <div class="d-flex flex-column justify-content-center">
+                    <a href="tel:(044) 555 123 1234 / 1235" class="flex-column position-relative mb-2 hover-link">
+                        <h6 class="mb-0">New York</h6>
+                        <p class="mb-0 hover-link">(044) 555 123 1234 / 1235</p>
+                    </a>
+                    <a href="tel:(023) 555 321 4321 / 4320" class="flex-column position-relative mb-2 hover-link">
+                        <h6 class="mb-0">Chicago</h6>
+                        <p class="mb-0 hover-link">(023) 555 321 4321 / 4320</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-4 d-flex align-items-center">
+                <img src="img/contacts/ico-mail.png" alt="mail icon" class="mr-3">
+                <div class="d-flex flex-column justify-content-center">
+                    <a href="mailto:info.newyork@redsamurai.com" class="flex-column position-relative mb-2 hover-link">
+                        <h6 class="mb-0">New York</h6>
+                        <p class="mb-0 hover-link">info.newyork@redsamurai.com</p>
+                    </a>
+                    <a href="mailto:info.chicago@redsamurai.com" class="flex-column position-relative mb-2 hover-link">
+                        <h6 class="mb-0">Chicago</h6>
+                        <p class="mb-0 hover-link">info.chicago@redsamurai.com</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <form action="#" class="row contacts-form " method="#">
+            <div class="col-6 d-flex flex-column">
+                    <label for="name">Your name</label>
+                    <input id="name" name="name" pattern="[A-Za-z]{2,}" placeholder="Your Name......" required="" type="text">
+                    <label for="email">Your email</label>
+                    <input id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Your Email......" required="" type="email">
+                    <label for="subject">Your Subject</label>
+                    <input id="subject" name="name" pattern="[A-Za-z]{2,}" placeholder="Your Subject......" required="" type="text">
+            </div>
+            <div class="col-6 d-flex flex-column">
+                <label for="user-message">Your Message</label>
+                <textarea id="user-message" name="user-message" placeholder="Your Message....." class="h-100"></textarea>
+            </div>
+            <button type="submit" class="btn btn-success mt-5">Send Message</button>
+        </form>
+    </div>
+</section>
+
+
 <script src="https://kit.fontawesome.com/1737e83e5d.js" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <script src="js/custom.js"></script>
+<script src="js/progressBars.js"></script>
 </body>
 </html>
