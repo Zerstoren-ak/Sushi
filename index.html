@@ -79,7 +79,7 @@
                                     <a class="nav-link" href="#">Shop</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Combos</a>
+                                    <a class="nav-link" href="#combos">Combos</a>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -94,7 +94,7 @@
                                     </div>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Contact</a>
+                                    <a class="nav-link" href="#contacts">Contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -137,8 +137,8 @@
                                         et dolore magna aliqua. Ut enim ad minim.</p>
                                 </div>
                                 <div class="slider-price d-flex flex-wrap justify-content-end">
-                                    <span class="w-25 mr-1">Only for today</span><span
-                                        class="font-large">$55</span>
+                                    <span class="w-25 mr-1">Only for today</span>
+                                    <span class="font-large">$55</span>
                                     <button class="btn btn-danger">
                                         <i class="fas fa-plus mr-1" aria-hidden="true"></i>Add to cart
                                     </button>
@@ -499,7 +499,7 @@
     </div>
 </section>
 
-<section class="combos">
+<section class="combos" id="combos">
     <div class="container">
         <h3 class="section-title"><span>Offers and</span> Combos</h3>
         <div class="row row-cols-3">
@@ -629,14 +629,34 @@
 <section class="progress_bar">
     <div class="container">
         <div class="row">
-            <div class="col-4 progress_bar-item"></div>
-            <div class="col-4"></div>
-            <div class="col-4"></div>
-            <div class="col-4"></div>
+            <div class="col-3 text-center">
+                <div class="progressbar-item mx-auto mb-3 position-relative" id="experienceContainer">
+                    <p class="progressbar-text">13</p>
+                </div>
+                <h5>Years of <br><span class="design-color">experience</span></h5>
+            </div>
+            <div class="col-3 text-center">
+                <div class="progressbar-item mx-auto mb-3 position-relative" id="customersContainer">
+                    <p class="progressbar-text">12500</p>
+                </div>
+                <h5>Happy <br><span class="design-color">customers</span></h5>
+            </div>
+            <div class="col-3 text-center">
+                <div class="progressbar-item mx-auto mb-3 position-relative" id="dishesContainer">
+                    <p class="progressbar-text">+63000</p>
+                </div>
+                <h5>Dishes <br><span class="design-color">served</span></h5>
+            </div>
+            <div class="col-3 text-center">
+                <div class="progressbar-item mx-auto mb-3 position-relative" id="branchesContainer">
+                    <p class="progressbar-text">2</p>
+                </div>
+                <h5>Branches <br><span class="design-color">in usa</span></h5>
+            </div>
         </div>
     </div>
 </section>
-<section class="contact-us">
+<section class="contact-us" id="contacts">
     <div class="container">
         <h3 class="section-title">Contact <span>us</span></h3>
         <div class="row contacts mb-5">
@@ -645,11 +665,11 @@
                 <div class="d-flex flex-column justify-content-center">
                     <a href="https://goo.gl/maps/dFnN1tuSJBZdA5nM8" class="flex-column position-relative mb-2 hover-link">
                         <h6 class="mb-0">New York</h6>
-                        <p class="mb-0 hover-link">W 39th Street 1234, New York</p>
+                        <p class="hover-link">W 39th Street 1234, New York</p>
                     </a>
                     <a href="https://goo.gl/maps/hzNWa8DziSAEhy6G6" class="flex-column position-relative mb-2 hover-link">
                         <h6 class="mb-0">Chicago</h6>
-                        <p class="mb-0 hover-link">Colombus Ave 1234, Chicago</p>
+                        <p class="hover-link">Colombus Ave 1234, Chicago</p>
                     </a>
                 </div>
             </div>
@@ -658,11 +678,11 @@
                 <div class="d-flex flex-column justify-content-center">
                     <a href="tel:(044) 555 123 1234 / 1235" class="flex-column position-relative mb-2 hover-link">
                         <h6 class="mb-0">New York</h6>
-                        <p class="mb-0 hover-link">(044) 555 123 1234 / 1235</p>
+                        <p class="hover-link">(044) 555 123 1234 / 1235</p>
                     </a>
                     <a href="tel:(023) 555 321 4321 / 4320" class="flex-column position-relative mb-2 hover-link">
                         <h6 class="mb-0">Chicago</h6>
-                        <p class="mb-0 hover-link">(023) 555 321 4321 / 4320</p>
+                        <p class="hover-link">(023) 555 321 4321 / 4320</p>
                     </a>
                 </div>
             </div>
@@ -671,11 +691,11 @@
                 <div class="d-flex flex-column justify-content-center">
                     <a href="mailto:info.newyork@redsamurai.com" class="flex-column position-relative mb-2 hover-link">
                         <h6 class="mb-0">New York</h6>
-                        <p class="mb-0 hover-link">info.newyork@redsamurai.com</p>
+                        <p class="hover-link">info.newyork@redsamurai.com</p>
                     </a>
                     <a href="mailto:info.chicago@redsamurai.com" class="flex-column position-relative mb-2 hover-link">
                         <h6 class="mb-0">Chicago</h6>
-                        <p class="mb-0 hover-link">info.chicago@redsamurai.com</p>
+                        <p class="hover-link">info.chicago@redsamurai.com</p>
                     </a>
                 </div>
             </div>
@@ -702,11 +722,20 @@
     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3027.4913154649!2d-73.9897727!3d40.6410989!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25ad4167e54af%3A0xfaa3ce88701e283e!2zMTIzNCAzOXRoIFN0LCBCcm9va2x5biwgTlkgMTEyMTgsINCh0KjQkA!5e0!3m2!1sru!2sua!4v1589213750841!5m2!1sru!2sua" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 </section>
 
-<footer>
+<footer class="footer">
     <div class="container">
-        <div class="row">
-            <div class="col-4"></div>
-            <div class="col-4"></div>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-4 order-1 social-icons">
+                <a href="#" class="btn btn-danger rounded-circle socials mr-3"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="btn btn-danger rounded-circle socials mr-3"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="btn btn-danger rounded-circle socials mr-3"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#" class="btn btn-danger rounded-circle socials mr-3"><i class="fas fa-share-alt"></i></a>
+                <a href="#" class="btn btn-danger rounded-circle socials mr-3"><i class="fas fa-share"></i></a>
+                <a href="#" class="btn btn-danger rounded-circle socials"><i class="fas fa-hashtag"></i></a>
+            </div>
+            <div class="col-3">
+                <p class="mb-0 text-white text-uppercase copyright">The <span class="design-color">red</span> samurai <span class="font-thin">- all rights reserved</span></p>
+            </div>
         </div>
     </div>
 </footer>
@@ -716,7 +745,7 @@
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="js/progressbar.min.js"></script>
 <script src="js/custom.js"></script>
-<script src="js/progressBars.js"></script>
 </body>
 </html>
