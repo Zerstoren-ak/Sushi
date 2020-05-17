@@ -22,51 +22,72 @@ btnFormClose.addEventListener(`click`, function () {
 });
 
 //ProgressBar
+const statistics = document.getElementById(`statistics`);
+const branchesContainer = document.getElementById(`branchesContainer`);
+const experienceContainer = document.getElementById(`experienceContainer`);
+const customersContainer = document.getElementById(`customersContainer`);
+const dishesContainer = document.getElementById(`dishesContainer`);
 
-// progressbar.js@1.0.0 version is used
-// Docs: http://progressbarjs.readthedocs.org/en/1.0.0/
-
-let experienceBar = new ProgressBar.Circle(experienceContainer, {
+const progressBarSet = {
     strokeWidth: 5,
     easing: 'easeInOut',
-    duration: 1500,
+    duration: 1000,
     color: 'var(--mainDesClr)',
     trailColor: '#535353',
     trailWidth: 5,
     svgStyle: null,
+    autoStyleContainer: false,
+    text: {
+        style: null,
+    },
+};
+
+progressBarSet.step = function(state, circle) {
+    let value = Math.round(circle.value() * 52);
+    if (value === 0) {
+        circle.setText('');
+    } else {
+        circle.setText(value);
+    }
+};
+const experienceBar = new ProgressBar.Circle(experienceContainer, progressBarSet);
+
+progressBarSet.step = function(state, circle) {
+    let value = Math.round(circle.value() * 19231);
+    if (value === 0) {
+        circle.setText('');
+    } else {
+        circle.setText(value);
+    }
+};
+const customersBar = new ProgressBar.Circle(customersContainer, progressBarSet);
+
+progressBarSet.step = function(state, circle) {
+    let value = Math.round(circle.value() * 74118);
+    if (value === 0) {
+        circle.setText('');
+    } else {
+        circle.setText(`+` + value);
+    }
+};
+const dishesBar = new ProgressBar.Circle(dishesContainer, progressBarSet);
+
+progressBarSet.step = function(state, circle) {
+    let value = Math.round(circle.value() * 10);
+    if (value === 0) {
+        circle.setText('');
+    } else {
+        circle.setText(value);
+    }
+};
+const branchesBar = new ProgressBar.Circle(branchesContainer, progressBarSet);
+
+window.addEventListener(`scroll`, function(){
+    if (window.pageYOffset > statistics.offsetTop - (window.innerHeight / 2)) {
+        experienceBar.animate(0.25);
+        customersBar.animate(0.65);
+        dishesBar.animate(0.85);
+        branchesBar.animate(0.2);
+    }
 });
 
-let customersBar = new ProgressBar.Circle(customersContainer, {
-    strokeWidth: 5,
-    easing: 'easeInOut',
-    duration: 1500,
-    color: 'var(--mainDesClr)',
-    trailColor: '#535353',
-    trailWidth: 5,
-    svgStyle: null
-});
-
-let dishesBar = new ProgressBar.Circle(dishesContainer, {
-    strokeWidth: 5,
-    easing: 'easeInOut',
-    duration: 1500,
-    color: 'var(--mainDesClr)',
-    trailColor: '#535353',
-    trailWidth: 5,
-    svgStyle: null
-});
-
-let branchesBar = new ProgressBar.Circle(branchesContainer, {
-    strokeWidth: 5,
-    easing: 'easeInOut',
-    duration: 1500,
-    color: 'var(--mainDesClr)',
-    trailColor: '#535353',
-    trailWidth: 5,
-    svgStyle: null
-});
-
-experienceBar.animate(0.25);
-customersBar.animate(0.65);
-dishesBar.animate(0.85);
-branchesBar.animate(0.25);
