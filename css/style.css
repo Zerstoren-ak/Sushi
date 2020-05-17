@@ -108,7 +108,8 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
 }
 
-.hover-link:hover {
+.hover-link:hover,
+.hover-link:focus {
     text-decoration: none;
     color: var(--mainDesClr);
     transition: .2s;
@@ -220,7 +221,8 @@ h1, h2, h3, h4, h5, h6 {
     transition: .2s ease;
 }
 
-.header-menu .nav-link:hover::before  {
+.header-menu .nav-link:hover::before,
+.header-menu .nav-link:focus::before {
     height: 4px;
 }
 
@@ -448,7 +450,8 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #ffaa17;
 }
 
-.card-image:hover .circle-hover {
+.card-image:hover .circle-hover,
+.card-image:focus-within .circle-hover {
     transform: scale(1);
 }
 
@@ -819,7 +822,8 @@ h1, h2, h3, h4, h5, h6 {
     transition: .2s ease;
 }
 
-.contacts a:hover::before {
+.contacts a:hover::before,
+.contacts a:focus::before {
     width: 100%;
 }
 

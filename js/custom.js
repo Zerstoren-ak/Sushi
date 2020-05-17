@@ -22,6 +22,7 @@ btnFormClose.addEventListener(`click`, function () {
 });
 
 //ProgressBar
+
 const statistics = document.getElementById(`statistics`);
 const branchesContainer = document.getElementById(`branchesContainer`);
 const experienceContainer = document.getElementById(`experienceContainer`);
