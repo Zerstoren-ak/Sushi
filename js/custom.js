@@ -91,4 +91,3 @@ window.addEventListener(`scroll`, function(){
         branchesBar.animate(0.2);
     }
 });
-

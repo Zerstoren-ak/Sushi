@@ -665,19 +665,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .combos-arc.red {
-    height: 39em;
     width: 100%;
-    background: url(../img/sprites/arc-sprite.png) no-repeat -25px 0 / cover;
+    background: url(../img/sprites/arc-sprite.png) no-repeat -21px 0 / cover;
 }
 
 .combos-arc.yellow {
-    height: 39em;
-    background: url('../img/sprites/arc-sprite.png') no-repeat -414px 0 / cover;
+    width: 100%;
+    background: url('../img/sprites/arc-sprite.png') no-repeat -411px 0 / cover;
 }
 
 .combos-arc {
     color: var(--fClrLight);
-    padding: 90px 45px 0 35px;
+    padding: 90px 40px 0 40px;
     font-family: var(--ffTextExtra);
     text-align: center;
     margin-bottom: 4.1rem;
@@ -869,11 +868,33 @@ h1, h2, h3, h4, h5, h6 {
 /*Media*/
 
 @media (max-width: 1199.98px) {
+    .hero .slider-item {
+        padding: 0.4rem 3rem;
+    }
 
+    .daily-meals .card-item {
+        padding: 0 2rem;
+    }
+
+    .order-phone a:last-child {
+        font-size: 2.5rem;
+    }
+
+    .combos-arc.red {
+        background-position: -8px 0;
+    }
+
+    .combos-arc.yellow {
+        background-position: -399px 0;
+    }
+
+    .combos-arc{
+        padding: 90px 50px 0 50px;
+    }
 }
 
 @media (max-width: 991.98px) {
-    .header-contacts .row>div {
+    .header-contacts .row > div {
         justify-content: center !important;
     }
 
@@ -886,6 +907,11 @@ h1, h2, h3, h4, h5, h6 {
         top: -1.7rem;
     }
 
+    .navbar-nav {
+        background-color: #282828;
+        padding: 1rem;
+    }
+
     .navbar-collapse {
         z-index: 10;
     }
@@ -894,8 +920,12 @@ h1, h2, h3, h4, h5, h6 {
         position: absolute;
         top: 100%;
     }
-}
 
+    .instant-order img[alt^="hand"] {
+        display: none;
+    }
+
+}
 @media (max-width: 767.98px) {
 }
 
