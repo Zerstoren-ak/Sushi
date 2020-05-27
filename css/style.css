@@ -42,27 +42,6 @@
 
 /*General*/
 
-a,
-span,
-input,
-i,
-button {
-    display: inline-flex;
-    color: inherit;
-    font-style: normal;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-.btn {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff;
-    font-size: 12px;
-    font-weight: 600;
-}
-
 :root {
     --mainDesClr: #db2e2e;
     --bgMain: #ffffff;
@@ -87,6 +66,27 @@ html {
 body {
     font-family: var(--ffText);
     background-color: var(--bgMain);
+}
+
+a,
+span,
+input,
+i,
+button {
+    display: inline-flex;
+    color: inherit;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
 }
 
 p {
@@ -173,9 +173,10 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 -1rem;
 }
 
-.login-form .form-info>p {
+.login-form .form-info > p {
     color: var(--fClrPLight);
 }
+
 /*Header*/
 
 .header-contacts {
@@ -262,9 +263,8 @@ h1, h2, h3, h4, h5, h6 {
 /*Hero*/
 
 .hero {
-    background:
-        linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)),
-        url(../img/main-bg.jpg) no-repeat center / cover;
+    background: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)),
+    url(../img/main-bg.jpg) no-repeat center / cover;
     color: var(--fClrLight);
     overflow: hidden;
 }
@@ -344,7 +344,7 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 0;
 }
 
-.daily-meals .card-item>h4 {
+.daily-meals .card-item > h4 {
     position: relative;
     display: flex;
     justify-content: center;
@@ -352,11 +352,11 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
 }
 
-.daily-meals .card-item>a:first-child {
+.daily-meals .card-item > a:first-child {
     margin-bottom: 1rem;
 }
 
-.daily-meals .card-item>p {
+.daily-meals .card-item > p {
     margin-bottom: 2rem;
 }
 
@@ -375,11 +375,11 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
 }
 
-.section-title>span {
+.section-title > span {
     font-weight: 300;
 }
 
-.section-title>span::before {
+.section-title > span::before {
     content: '';
     position: absolute;
     width: 170px;
@@ -455,7 +455,7 @@ h1, h2, h3, h4, h5, h6 {
     transform: scale(1);
 }
 
-.circle-hover>i {
+.circle-hover > i {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -466,7 +466,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #ffffff;
 }
 
-.specials .card-item>p {
+.specials .card-item > p {
     color: #a0a0a0;
 }
 
@@ -494,7 +494,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
 }
 
-.specials .card-buttons>div {
+.specials .card-buttons > div {
     position: relative;
     display: flex;
     align-items: center;
@@ -503,7 +503,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.9rem;
 }
 
-.specials .card-buttons>div>span {
+.specials .card-buttons > div > span {
     flex-direction: column;
     align-items: center;
     font-size: 8px;
@@ -517,7 +517,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
 }
 
-.specials .card-buttons>* {
+.specials .card-buttons > * {
     width: 50%;
 }
 
@@ -540,15 +540,16 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 }
 
-.section-legend>p {
+.section-legend > p {
     font-size: 1.1rem;
     color: #b8b8b8;
 }
 
-.section-legend>h4 {
+.section-legend > h4 {
     font-size: 1.9rem;
     margin-bottom: 1.5rem;
 }
+
 /*clip-path: polygon(0 0, 100% 0, 100% 100%, 49% 74%, 0 100%);*/
 
 /*Our Dream Team*/
@@ -557,9 +558,8 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--fClrLight);
     padding-top: var(--sectPadTop);
     padding-bottom: calc((var(--sectPadBtm)) - 1.5rem);
-    background:
-        linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)),
-        url(../img/team-bg.jpg) no-repeat center / cover;;
+    background: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)),
+    url(../img/team-bg.jpg) no-repeat center / cover;;
 }
 
 .team p {
@@ -587,7 +587,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 245px;
 }
 
-.team-card .card-image>a {
+.team-card .card-image > a {
     font-size: .8rem;
 }
 
@@ -613,13 +613,12 @@ h1, h2, h3, h4, h5, h6 {
 /*Instant order*/
 
 .instant-order {
-    background:
-        linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)),
-        url(../img/order-bg.jpg) no-repeat center / cover;
+    background: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)),
+    url(../img/order-bg.jpg) no-repeat center / cover;
     color: var(--fClrLight);
 }
 
-.instant-order>.container {
+.instant-order > .container {
     padding: 5.3rem 0;
 }
 
@@ -682,14 +681,14 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 4.1rem;
 }
 
-.combos-arc>ul {
+.combos-arc > ul {
     padding: 0;
     list-style: none;
     font-weight: 300;
     margin-bottom: 1rem;
 }
 
-.combos-arc>ul>li {
+.combos-arc > ul > li {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -715,11 +714,11 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     color: var(--fClrLight);
     font-family: var(--ffTextExtra);
-    width: 45%;
     margin-bottom: 3.35rem;
+    text-align: center;
 }
 
-.combos-price + p>span {
+.combos-price + p > span {
     font-weight: 700;
 }
 
@@ -728,16 +727,15 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0.4rem 1.1rem;
 }
 
-.section-legend + p{
+.section-legend + p {
     color: var(--fClrPLight);
 }
 
 /*Reviews*/
 
 .reviews {
-    background:
-            linear-gradient(rgba(219, 46, 46, .85), rgba(219, 46, 46, .85)),
-            url(../img/bg-reviews.jpg) no-repeat center / cover;
+    background: linear-gradient(rgba(219, 46, 46, .85), rgba(219, 46, 46, .85)),
+    url(../img/bg-reviews.jpg) no-repeat center / cover;
     color: var(--fClrLight);
 }
 
@@ -767,13 +765,12 @@ h1, h2, h3, h4, h5, h6 {
     align-self: flex-end;
 }
 
-    /*Progress bars*/
+/*Progress bars*/
 
 .progress_bar {
     padding: calc(var(--sectPadTop) + 1rem) 0;
-    background:
-            linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)),
-            url(../img/bg-progressBars.jpg) no-repeat center / cover;
+    background: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)),
+    url(../img/bg-progressBars.jpg) no-repeat center / cover;
 }
 
 .progressbar-item {
@@ -793,7 +790,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
 }
 
-.progressbar-item+h5 {
+.progressbar-item + h5 {
     color: var(--fClrLight);
 }
 
@@ -804,10 +801,14 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: var(--sectPadBtm);
 }
 
-.contacts a>p {
+.contacts a > p {
     color: var(--fClrPLight);
     text-transform: capitalize;
     margin-bottom: 0;
+}
+
+.contacts div:last-child p {
+    text-transform: lowercase;
 }
 
 .contacts a::before {
@@ -888,12 +889,16 @@ h1, h2, h3, h4, h5, h6 {
         background-position: -399px 0;
     }
 
-    .combos-arc{
+    .combos-arc {
         padding: 90px 50px 0 50px;
     }
 }
 
 @media (max-width: 991.98px) {
+    .navbar {
+        left: -30px;
+    }
+
     .header-contacts .row > div {
         justify-content: center !important;
     }
@@ -921,17 +926,52 @@ h1, h2, h3, h4, h5, h6 {
         top: 100%;
     }
 
-    .instant-order img[alt^="hand"] {
-        display: none;
+    .combos-arc.red {
+        background-position: 1px 0;
+    }
+
+    .combos-arc.yellow {
+        background-position: -389px 0;
+    }
+
+    .combos-arc {
+        padding: 90px 60px 0 60px;
     }
 
 }
+
 @media (max-width: 767.98px) {
+    :root {
+        --sectPadTop: 3.5rem;
+        --sectPadBtm: 4rem;
+    }
+    .hero-mascot {
+        bottom: -9rem;
+    }
+
+    .combos-arc.red {
+        background-position: -5px 0;
+    }
+
+    .combos-arc.yellow {
+        background-position: -395px 0;
+    }
+
+    .combos-arc {
+        padding: 90px 60px 0 60px;
+    }
+
+    .review-card {
+        width: 40%;
+    }
+
+    .contacts-form textarea {
+        min-height: 9rem;
+    }
+
 }
 
 @media (max-width: 575.98px) {
 
 }
-
-
 

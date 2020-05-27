@@ -2,7 +2,7 @@
 //SLider
 $('.carousel').carousel({
     interval: false,
-})
+});
 
 
 //Popups
